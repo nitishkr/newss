@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constraintLayout"
+    android:background="@drawable/rounded_corner"
+    android:padding="11dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <TextView
+        android:id="@+id/MediaSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageContent"
+        android:paddingLeft="2mm"
+        android:layout_width="25mm"
+        android:layout_height="25mm"
+        android:layout_below="@id/MediaSource"
+        android:layout_alignParentRight="true"
+
+        />
+    <TextView
+        android:id="@+id/NewsTitle"
+        android:paddingTop="1.5mm"
+        android:layout_width="70mm"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_below="@id/MediaSource"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/imageContent"
+       />
+
+
+
+    <TextView
+        android:id="@+id/UpdatedTime"
+        android:paddingTop="4mm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NewsTitle"
+        android:layout_alignParentBottom="true"
+        android:text="3 hours ago"
+        />
+</RelativeLayout>
